@@ -8,11 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="426c91dd-a598-4d3c-b6b3-ee4c8cf77b57" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GalleryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebsiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebsiteController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" notifyAboutMissingVendor="false">
+  <component name="ComposerSettings" doNotAsk="true" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -327,6 +324,12 @@
       <recent name="E:\xampp\htdocs\laravel-blog\resources\views\admin\post" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -338,7 +341,8 @@
       <workItem from="1589367654257" duration="10442000" />
       <workItem from="1589450764838" duration="6843000" />
       <workItem from="1589608390454" duration="160000" />
-      <workItem from="1627987066415" duration="10061000" />
+      <workItem from="1627987066415" duration="11728000" />
+      <workItem from="1628028627069" duration="798000" />
     </task>
     <task id="LOCAL-00001" summary="20210803: updated the requirements and some layout&#10;&#10;- added in the preferred background image&#10;- added in the links to the bottom">
       <created>1627993076981</created>
@@ -361,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627997649012</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20210803: updated all the controllers &#10;&#10;- I hate direct access to properties">
+      <created>1627998046397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627998046397</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -402,7 +413,8 @@
     <MESSAGE value="20210803: updated the requirements and some layout&#10;&#10;- added in the preferred background image&#10;- added in the links to the bottom" />
     <MESSAGE value="20210803: pulled in the raw scss from clean-bootstrap&#10;&#10;- added in the raleway google font" />
     <MESSAGE value="20210803: updated some more css and scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="20210803: updated some more css and scss" />
+    <MESSAGE value="20210803: updated all the controllers &#10;&#10;- I hate direct access to properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210803: updated all the controllers &#10;&#10;- I hate direct access to properties" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_05_13_111359_create_posts_table.php">

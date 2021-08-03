@@ -44,6 +44,18 @@ class WebsiteController extends Controller
             return \Response::view('website.errors.404', [], 404);
         }
 
+        if (!$post['thumbnail']) {
+            $categories = $post->categories()->pluck('name')->toArray();
+
+            if (empty($categories)) {
+                $post->thumbnail = 'https://source.unsplash.com/collection/8807226/1600x900';
+            } else {
+                // https://source.unsplash.com/
+                $searchTerms = count($categories) > 1 ? implode(',', $categories) : $categories[0];
+                $post->thumbnail = "https://source.unsplash.com/1920x1080/?{$searchTerms}";
+            }
+        }
+
         return view('website.post', compact('post'));
     }
 
