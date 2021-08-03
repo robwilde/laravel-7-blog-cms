@@ -29,3 +29,39 @@ blockquote {
     font-style: italic;
     color: $gray-600;
 }
+
+.page-link {
+    color: #00657b;
+    text-align: center;
+    &.active .page-link {
+        background-color: #00657b;
+        border-color: #00657b;
+    }
+}
+
+.category-list {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+
+.category-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.post-category a {
+    text-decoration: none;
+}
+
+.masthead.custom-masthead {
+    padding-top: 3rem;
+    padding-bottom: 38rem;
+    background: #16181a no-repeat scroll center center
+}
+
+.masthead.post-masthead {
+    background: #16181a no-repeat scroll center center
+}

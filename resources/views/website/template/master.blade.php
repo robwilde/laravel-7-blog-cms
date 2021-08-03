@@ -15,54 +15,10 @@
 
     <!-- Custom fonts for this template -->
     <link href="{{ asset('website/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
-          type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-          rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-{{--    <link href="{{ asset('website/css/clean-blog.min.css') }}" rel="stylesheet">--}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-    <style>
-        .page-link {
-            color: #00657b;
-            text-align: center;
-        }
-
-        .page-item.active .page-link {
-            background-color: #00657b;
-            border-color: #00657b;
-        }
-
-        .category-list {
-            padding: 0;
-            margin: 0;
-        }
-
-        .category-list li {
-            list-style: none;
-        }
-
-        .category-title {
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-
-        .post-category a {
-            text-decoration: none;
-        }
-
-        .masthead.custom-masthead {
-            padding-top: 3rem;
-            padding-bottom: 38rem;
-            background: #16181a no-repeat scroll center center
-        }
-
-        .masthead.post-masthead {
-            background: #16181a no-repeat scroll center center
-        }
-    </style>
 </head>
 
 <body>
@@ -145,7 +101,7 @@
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; MrWilde.dev 2021</p>
+                <p class="small text-center text-muted fst-italic">Copyright &copy; MrWilde.dev 2021</p>
             </div>
         </div>
     </div>
