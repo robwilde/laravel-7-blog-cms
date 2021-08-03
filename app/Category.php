@@ -4,6 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @mixin IdeHelperCategory
+ */
 class Category extends Model
 {
     protected $fillable = ['user_id', 'thumbnail', 'name', 'slug', 'is_published'];

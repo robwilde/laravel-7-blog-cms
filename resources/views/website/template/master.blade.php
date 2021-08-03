@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>MrWilde - Dev</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('website/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -51,6 +51,16 @@
         .post-category a {
             text-decoration: none;
         }
+
+        .masthead.custom-masthead {
+            padding-top: 3rem;
+            padding-bottom: 38rem;
+            background: #16181a no-repeat scroll center center
+        }
+
+        .masthead.post-masthead {
+            background: #16181a no-repeat scroll center center
+        }
     </style>
 </head>
 
@@ -59,7 +69,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">Start Bootstrap</a>
+        <a class="navbar-brand" href="{{ url('/') }}">MrWilde - Dev</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -94,31 +104,47 @@
             <div class="col-lg-8 col-md-10 mx-auto">
                 <ul class="list-inline text-center">
                     <li class="list-inline-item">
-                        <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
+                        <a href="https://twitter.com/mrwilde" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
+                        <a href="https://www.youtube.com/c/MrRobwilde" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
+                        <a href="https://github.com/robwilde" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.mixcloud.com/robert-wilde3/" target="_blank">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-mixcloud fa-stack-1x fa-inverse"></i>
+                                    </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://degreed.com/profile/mrwilde/overview" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-leanpub fa-stack-1x fa-inverse"></i>
+                            </span>
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+                <p class="copyright text-muted">Copyright &copy; MrWilde.dev 2021</p>
             </div>
         </div>
     </div>

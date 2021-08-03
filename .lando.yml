@@ -1,0 +1,21 @@
+name: mrwilde-dev
+recipe: laravel
+config:
+    via: nginx
+    php: "7.4"
+    database: postgres
+    webroot: public
+services:
+    appserver:
+        composer:
+            phpunit/phpunit: ^9
+    node:
+      type: node:14
+tooling:
+    phpunit:
+        service: appserver
+        description: Run PHP Unit tests in Laravel
+        cmd: php vendor/bin/phpunit
+    npm:
+      service: node
+      cmd: npm
