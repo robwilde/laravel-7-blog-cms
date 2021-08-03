@@ -1,11 +1,22 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
-// Variables
+      // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-// custom
-@import "header";
+// Global CSS
+@import './global';
+
+// Components
+@import './components/buttons';
+@import './components/forms';
+@import './components/navbar';
+
+// Sections
+@import './sections/footer';
+@import './sections/masthead';
+@import './sections/post';

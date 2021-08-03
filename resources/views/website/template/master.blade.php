@@ -21,7 +21,8 @@
           rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="{{ asset('website/css/clean-blog.min.css') }}" rel="stylesheet">
+{{--    <link href="{{ asset('website/css/clean-blog.min.css') }}" rel="stylesheet">--}}
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <style>
         .page-link {
