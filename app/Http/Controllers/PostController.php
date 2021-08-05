@@ -47,13 +47,11 @@ class PostController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $this->validate($request, [
-            "thumbnail" => 'required',
             "title" => 'required|unique:posts',
             "details" => "required",
             "category_id" => "required"
         ],
             [
-                'thumbnail.required' => 'Enter thumbnail url',
                 'title.required' => 'Enter title',
                 'title.unique' => 'Title already exist',
                 'details.required' => 'Enter details',
@@ -104,13 +102,11 @@ class PostController extends Controller
     public function update(Request $request, Post $post): RedirectResponse
     {
         $this->validate($request, [
-            "thumbnail" => 'required',
             'title' => 'required|unique:posts,title,' . $post->id . ',id', // ignore this id
             'details' => 'required',
             "category_id" => "required"
         ],
             [
-                'thumbnail.required' => 'Enter thumbnail url',
                 'title.required' => 'Enter title',
                 'title.unique' => 'Title already exist',
                 'details.required' => 'Enter details',

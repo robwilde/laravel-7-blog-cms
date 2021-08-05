@@ -8,18 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="426c91dd-a598-4d3c-b6b3-ee4c8cf77b57" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_08_04_122221_update-posts-table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper_models.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper_models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebsiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebsiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/website/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/website/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/website/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/website/post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Helpers/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Helpers/helpers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,7 +354,7 @@
       <workItem from="1628028627069" duration="1983000" />
       <workItem from="1628079278951" duration="5708000" />
       <workItem from="1628120205837" duration="700000" />
-      <workItem from="1628153617482" duration="2867000" />
+      <workItem from="1628153617482" duration="3875000" />
     </task>
     <task id="LOCAL-00001" summary="20210803: updated the requirements and some layout&#10;&#10;- added in the preferred background image&#10;- added in the links to the bottom">
       <created>1627993076981</created>
@@ -399,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628032336261</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="20210805: updated the posts to use publish_date so I can backdate posts">
+      <created>1628165016650</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628165016650</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -442,7 +441,8 @@
     <MESSAGE value="20210803: updated some more css and scss" />
     <MESSAGE value="20210803: updated all the controllers &#10;&#10;- I hate direct access to properties" />
     <MESSAGE value="20210804: Added in ability to fill in the posts thumbnail with unsplash" />
-    <option name="LAST_COMMIT_MESSAGE" value="20210804: Added in ability to fill in the posts thumbnail with unsplash" />
+    <MESSAGE value="20210805: updated the posts to use publish_date so I can backdate posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210805: updated the posts to use publish_date so I can backdate posts" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_05_13_111359_create_posts_table.php">
