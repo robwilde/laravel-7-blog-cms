@@ -8,11 +8,11 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
-                        <h1>{{ $post->title }}</h1>
-                        <h2 class="subheading">{{ $post->sub_title }}</h2>
+                        <h1 class="text-center">{{ $post->title }}</h1>
+                        <h2 class="subheading justify-content-center">{{ $post->sub_title }}</h2>
                         <span class="meta">Posted by
               <a href="#">{{ $post->user->name }}</a>
-              on {{ date('M d, Y', strtotime($post->created_at)) }}</span>
+              on {{ date('M d, Y', strtotime($post->publish_date)) }}</span>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    {{ $post->details }}
+                    {!! $post->details !!}
                 </div>
             </div>
         </div>

@@ -49,6 +49,13 @@
                             @endif
                         </div>
 
+                        <div class="form-group @if($errors->has('publish_date')) has-error @endif">
+                            {!! Form::label('Published Date') !!}
+                            {!! Form::date('publish_date', $post->publish_date) !!}
+                            @if ($errors->has('publish_date'))
+                                <span class="help-block">{!! $errors->first('publish_date') !!}</span>@endif
+                        </div>
+
                         <div class="form-group">
                             {!! Form::label('Publish') !!}
                             {!! Form::select('is_published', [1 => 'Publish', 0 => 'Draft'], null, ['class' => 'form-control']) !!}

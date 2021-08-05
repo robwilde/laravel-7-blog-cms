@@ -69,6 +69,7 @@ class PostController extends Controller
         $post->sub_title = $request->get('sub_title');
         $post->details = $request->get('details');
         $post->is_published = $request->get('is_published');
+        $post->publish_date = $request->get('publish_date');
         $post->post_type = 'post';
         $post->save();
 
@@ -124,6 +125,7 @@ class PostController extends Controller
         $post->sub_title = $request->get('sub_title');
         $post->details = $request->get('details');
         $post->is_published = $request->get('is_published');
+        $post->publish_date = $request->get('publish_date');
         $post->save();
 
         $post->categories()->sync($request->get('category_id'));

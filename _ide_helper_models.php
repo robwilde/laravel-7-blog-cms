@@ -102,6 +102,7 @@ namespace App{
  * @property string $is_published
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $publish_date
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Category[] $categories
  * @property-read int|null $categories_count
  * @property-read \App\User $user
@@ -113,6 +114,7 @@ namespace App{
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereIsPublished($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post wherePostType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post wherePublishDate($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereSlug($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereSubTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereThumbnail($value)

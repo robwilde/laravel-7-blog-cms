@@ -21,7 +21,7 @@ class WebsiteController extends Controller
             ->where('is_published', '1')
             ->get();
 
-        $posts = Post::orderBy('id', 'DESC')
+        $posts = Post::orderBy('publish_date', 'DESC')
             ->where('post_type', 'post')
             ->where('is_published', '1')
             ->paginate(5);

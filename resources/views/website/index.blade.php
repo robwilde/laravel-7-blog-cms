@@ -28,7 +28,7 @@
                         </a>
                         <p class="post-meta">Posted by
                             <a href="#">{{ $post->user->name }}</a>
-                            on {{ date('M d, Y', strtotime($post->created_at)) }}
+                            on {{ date('M d, Y', strtotime($post->publish_date)) }}
                             @if(count($post->categories) > 0)
                                 | <span class="post-category">
                             Category :
