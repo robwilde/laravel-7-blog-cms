@@ -3,7 +3,7 @@ recipe: laravel
 config:
     via: nginx
     php: "7.4"
-    database: postgres
+    database: mariadb
     webroot: public
 services:
     appserver:
