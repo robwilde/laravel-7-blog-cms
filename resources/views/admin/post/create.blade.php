@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('stylesheet')
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet"/>
 @endsection
 
 @section('content')
@@ -36,7 +35,7 @@
 
                         <div class="form-group @if($errors->has('details')) has-error @endif">
                             {!! Form::label('Details') !!}
-                            {!! Form::textarea('details', null, ['class' => 'form-control', 'placeholder' => 'Details']) !!}
+                            {!! Form::textarea('details', null, ['class' => 'form-control', 'id' => 'details', 'placeholder' => 'Details']) !!}
                             @if ($errors->has('details'))
                                 <span class="help-block">{!! $errors->first('details') !!}</span>@endif
                         </div>
@@ -71,18 +70,6 @@
 @endsection
 
 @section('javascript')
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            CKEDITOR.replace('details');
-
-            $('#category_id').select2({
-                placeholder: "Select categories"
-            });
-        });
-    </script>
+    <script src="//cdn.ckeditor.com/4.16.1/full/ckeditor.js"></script>
+    <script src="{{ asset('js/post-form.js') }}"></script>
 @endsection

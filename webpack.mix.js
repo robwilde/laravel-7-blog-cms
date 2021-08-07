@@ -12,5 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .sourceMaps();
+.js('resources/js/post-form.js', 'public/js')
+.sass('resources/sass/app.scss', 'public/css')
+.copy('resources/css/select2-4.0.13.min.css', 'public/css/select2.css')
+.sourceMaps();

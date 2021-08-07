@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('stylesheet')
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet"/>
 @endsection
 
 @section('content')
@@ -61,6 +60,8 @@
                             {!! Form::select('is_published', [1 => 'Publish', 0 => 'Draft'], null, ['class' => 'form-control']) !!}
                         </div>
 
+                        <div>{!! Form::hidden('category-ids', json_encode($post->categories()->allRelatedIds())) !!}</div>
+
                         {!! Form::submit('Update',['class' => 'btn btn-sm btn-warning']) !!}
                         {!! Form::close() !!}
                     </div>
@@ -71,18 +72,6 @@
 @endsection
 
 @section('javascript')
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            CKEDITOR.replace('details');
-
-            $('#category_id').select2({
-                placeholder: "Select categories"
-            }).val({!! json_encode($post->categories()->allRelatedIds()) !!}).trigger('change');
-        });
-    </script>
+    <script src="//cdn.ckeditor.com/4.16.1/full/ckeditor.js"></script>
+    <script src="{{ asset('js/post-form.js') }}"></script>
 @endsection
